@@ -14,6 +14,7 @@ import { Trash } from "lucide-react";
 
 export function ItemList() {
   const { inventory } = useItemStore();
+  // const { deleteItem } = useItemStore((s) => s.deleteItem);
 
   return (
     <Card>
@@ -63,7 +64,8 @@ export function ItemList() {
                     className="text-white bg-red-500 hover:bg-red-600 text-white"
                     variant="ghost"
                     size="sm"
-                  >
+                    // onClick={() => deleteItem(s.id)}
+>
                     <Trash className="h-4 w-4" />
                     Delete
                   </Button>
