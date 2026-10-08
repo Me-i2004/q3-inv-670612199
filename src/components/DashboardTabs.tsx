@@ -7,7 +7,6 @@ import {
 
 import { OverviewCards } from "./OverviewCards";
 import { ItemList } from "./ItemList";
-import { CategoryCards } from "./CategoryCards";
 
 export default function DashboardTabs() {
   return (
@@ -23,7 +22,7 @@ export default function DashboardTabs() {
       </TabsContent>
 
       <TabsContent value="">
-        ItemList
+        <ItemList />
       </TabsContent>
     </Tabs>
   );
